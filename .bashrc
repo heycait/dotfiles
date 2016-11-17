@@ -6,8 +6,6 @@ alias hist='history'
 alias ll='ls -lhG'
 alias be='bundle exec'
 alias diff='diff -u'
-alias loadfixd='rake db:fixtures:load RAILS_ENV=development FIXTURES_PATH=spec/fixtures' 
-alias loadfixt='rake db:fixtures:load RAILS_ENV=test FIXTURES_PATH=spec/fixtures'
 
 # Redefine command to add options
 alias df='df -h'
@@ -26,14 +24,14 @@ export HISTIGNORE="history:hist:pwd:exit:df:ls:ls -la:ll"
 export TERM=xterm-color
 export CLICOLOR=1
 export LSCOLORS=ExFxCxDxBxegedabagacad                       # sets colors for ls
-#export PS1="\w:> "
+#export PS1=":> "
 
 
 # Topher's dotfiles
 # Set sublime as the default editor
 #which -s subl && export EDITOR="subl --wait"
 
-# Prompt for git tracking color changes
+# Prompt
 PROMPT_COMMAND=$PROMPT_COMMAND' PS1="$(set $?; [ $1 -ne 0 ] && echo "${c_error}X "${c_reset})${c_path}\W${c_reset}$(git_prompt) :> "'
 export PS1='\n\[\033[0;31m\]\W\[\033[0m\]$(git_prompt)\[\033[0m\]:> '
 

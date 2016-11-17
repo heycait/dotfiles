@@ -16,4 +16,3 @@ def clear
   system('clear')
 end
 
-puts ("Loading ~/.irbrc a file that loads everytime you load irb")
