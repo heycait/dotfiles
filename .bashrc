@@ -30,7 +30,7 @@ export LSCOLORS=ExFxCxDxBxegedabagacad                       # sets colors for l
 # Set sublime as the default editor
 #which -s subl && export EDITOR="subl --wait"
 
-# Prompt
+# Prompt for git tracked color changes
 PROMPT_COMMAND=$PROMPT_COMMAND' PS1="$(set $?; [ $1 -ne 0 ] && echo "${c_error}X "${c_reset})${c_path}\W${c_reset}$(git_prompt) :> "'
 export PS1='\n\[\033[0;31m\]\W\[\033[0m\]$(git_prompt)\[\033[0m\]:> '
 
