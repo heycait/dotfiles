@@ -27,7 +27,6 @@ export LSCOLORS=ExFxCxDxBxegedabagacad                       # sets colors for l
 #export PS1=":> "
 
 
-# Topher's dotfiles
 # Set sublime as the default editor
 #which -s subl && export EDITOR="subl --wait"
 
